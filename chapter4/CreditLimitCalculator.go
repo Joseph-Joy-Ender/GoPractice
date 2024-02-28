@@ -51,7 +51,7 @@ func (limit *creditLimitCalculator) setCreditLimit(creditLimit int) {
 }
 
 func calculateNewBalance() int {
-	var limit *creditLimitCalculator
+	var limit = &creditLimitCalculator{}
 	newBalance := limit.getBeginningBalance() + limit.getTotalItems() - limit.getTotalOfCredits()
 	displayMessage(newBalance)
 	return newBalance
@@ -59,6 +59,7 @@ func calculateNewBalance() int {
 
 func displayMessage(newBalance int) {
 	var limit *creditLimitCalculator
+	limit = &creditLimitCalculator{}
 	if newBalance > limit.getCreditLimit() {
 		fmt.Println("Credit limit exceeded")
 	}

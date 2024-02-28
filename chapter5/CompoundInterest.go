@@ -8,10 +8,11 @@ import (
 func interest() {
 	fmt.Print("Enter principal: ")
 	var principal float64
-	fmt.Scanln(principal)
+	fmt.Scanln(&principal)
 
 	fmt.Print("Enter rate: ")
 	var rate float64
+	fmt.Scanln(&rate)
 
 	fmt.Printf("%s%23s\n", "Year", "Amount on deposit")
 
