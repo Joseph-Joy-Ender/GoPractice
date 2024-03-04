@@ -2,12 +2,6 @@ package main
 
 import "fmt"
 
-func main() {
-	fmt.Println()
-	printing()
-
-}
-
 func printing() {
 	fmt.Println("Hello World!!")
 	name := "Joy"

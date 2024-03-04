@@ -2,11 +2,6 @@ package main
 
 import "fmt"
 
-func main() {
-	feetToMeter()
-
-}
-
 func feetToMeter() {
 	fmt.Println("Enter feet")
 	var feet float64

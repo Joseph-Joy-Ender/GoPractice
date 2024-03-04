@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main3() {
 	radius := 2.5
 	pi := 3.14159
 	perimeter := 2 * radius * pi

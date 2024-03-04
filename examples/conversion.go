@@ -2,11 +2,6 @@ package main
 
 import "fmt"
 
-func main() {
-	conversion()
-
-}
-
 func conversion() {
 	fmt.Println("Enter fahrenheit: ")
 	var fah float64
